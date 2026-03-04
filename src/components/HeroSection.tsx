@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const images = [
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-2.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-1.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-4.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-5.jpg',
+  'https://cdn.poehali.dev/projects/7867868c-1d8a-4180-afff-427ba597f869/files/2883c4af-2397-4f17-be15-8c240b8816f0.jpg',
+  'https://cdn.poehali.dev/projects/7867868c-1d8a-4180-afff-427ba597f869/files/ad182323-2902-4c68-8309-c2bb2e33c1d0.jpg',
+  'https://cdn.poehali.dev/projects/7867868c-1d8a-4180-afff-427ba597f869/files/89a2cc63-f68f-4490-b938-978f2b7506ba.jpg',
+  'https://cdn.poehali.dev/projects/7867868c-1d8a-4180-afff-427ba597f869/files/10578831-51df-4beb-b03c-4469ff74bec1.jpg',
 ];
 
 export default function HeroSection() {
@@ -22,7 +22,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-white">
+    <section className="relative h-screen w-full overflow-hidden bg-black">
       <div className="absolute inset-0">
         {images.map((src, index) => (
           <div
@@ -41,11 +41,11 @@ export default function HeroSection() {
         ))}
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent" />
 
       <div className="relative z-10 flex h-full items-center">
         <div className="container mx-auto px-8 md:px-16">
-          <div className="flex max-w-2xl flex-col gap-12">
+          <div className="flex max-w-2xl flex-col gap-10">
             {/* Portrait */}
             <div
               className={cn(
@@ -53,10 +53,10 @@ export default function HeroSection() {
                 isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
               )}
             >
-              <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-white shadow-2xl md:h-64 md:w-64">
+              <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-purple-400/80 shadow-2xl shadow-purple-900/50 md:h-64 md:w-64">
                 <img
-                  src="https://cdn.poehali.dev/templates/creative-portfolio-ru/portrait.jpg"
-                  alt="Креативный специалист"
+                  src="https://cdn.poehali.dev/projects/7867868c-1d8a-4180-afff-427ba597f869/files/d6f3a36e-5823-4709-bd23-c4ef557af179.jpg"
+                  alt="Художница драконов"
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -70,17 +70,20 @@ export default function HeroSection() {
             >
               <div className="space-y-4">
                 <p className="text-3xl font-light text-white md:text-4xl lg:text-5xl">
-                  Алексей Иванов
+                  Художница драконов
                 </p>
-                <p className="text-xl font-light text-white/80 md:text-2xl">
-                  Креативный директор | Дизайнер
+                <p className="text-xl font-light text-purple-200/90 md:text-2xl">
+                  10 лет создаю магических существ
+                </p>
+                <p className="text-base text-white/60 max-w-md leading-relaxed">
+                  Каждый дракон — это отдельная история. Иллюстрации, концепт-арт и авторские работы в жанре тёмного фэнтези.
                 </p>
                 <div className="flex gap-6 pt-4">
                   <a
                     href="https://t.me/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white/70 transition-colors hover:text-white"
+                    className="text-purple-300/70 transition-colors hover:text-purple-200"
                     aria-label="Telegram"
                   >
                     <svg
@@ -96,7 +99,7 @@ export default function HeroSection() {
                     href="https://vk.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white/70 transition-colors hover:text-white"
+                    className="text-purple-300/70 transition-colors hover:text-purple-200"
                     aria-label="VKontakte"
                   >
                     <svg
@@ -112,7 +115,7 @@ export default function HeroSection() {
                     href="https://instagram.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white/70 transition-colors hover:text-white"
+                    className="text-purple-300/70 transition-colors hover:text-purple-200"
                     aria-label="Instagram"
                   >
                     <svg
@@ -138,7 +141,7 @@ export default function HeroSection() {
             onClick={() => setCurrentIndex(index)}
             className={cn(
               'h-1 transition-all duration-300',
-              currentIndex === index ? 'w-12 bg-white' : 'w-8 bg-white/40 hover:bg-white/60'
+              currentIndex === index ? 'w-12 bg-purple-400' : 'w-8 bg-white/30 hover:bg-white/50'
             )}
             aria-label={`Перейти к слайду ${index + 1}`}
           />
