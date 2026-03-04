@@ -41,7 +41,7 @@ export default function HeroSection() {
         ))}
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/30" />
 
       <div className="relative z-10 flex h-full items-center">
         <div className="container mx-auto px-8 md:px-16">
@@ -69,13 +69,13 @@ export default function HeroSection() {
               )}
             >
               <div className="space-y-4">
-                <p className="text-3xl font-light text-white md:text-4xl lg:text-5xl">
+                <p className="text-3xl font-semibold text-white drop-shadow-lg md:text-4xl lg:text-5xl">
                   Художница драконов
                 </p>
-                <p className="text-xl font-light text-purple-200/90 md:text-2xl">
+                <p className="text-xl font-medium text-purple-200 md:text-2xl drop-shadow-md">
                   10 лет создаю магических существ
                 </p>
-                <p className="text-base text-white/60 max-w-md leading-relaxed">
+                <p className="text-base text-white/90 max-w-md leading-relaxed drop-shadow-md">
                   Каждый дракон — это отдельная история. Иллюстрации, концепт-арт и авторские работы в жанре тёмного фэнтези.
                 </p>
                 <div className="flex gap-6 pt-4">
@@ -83,7 +83,7 @@ export default function HeroSection() {
                     href="https://t.me/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-purple-300/70 transition-colors hover:text-purple-200"
+                    className="text-purple-200 transition-colors hover:text-white"
                     aria-label="Telegram"
                   >
                     <svg
@@ -99,7 +99,7 @@ export default function HeroSection() {
                     href="https://vk.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-purple-300/70 transition-colors hover:text-purple-200"
+                    className="text-purple-200 transition-colors hover:text-white"
                     aria-label="VKontakte"
                   >
                     <svg
@@ -115,7 +115,7 @@ export default function HeroSection() {
                     href="https://instagram.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-purple-300/70 transition-colors hover:text-purple-200"
+                    className="text-purple-200 transition-colors hover:text-white"
                     aria-label="Instagram"
                   >
                     <svg
