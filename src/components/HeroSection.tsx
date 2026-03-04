@@ -75,7 +75,7 @@ export default function HeroSection() {
                 <p className="text-xl font-medium text-purple-200 md:text-2xl drop-shadow-md">
                   10 лет создаю магических существ
                 </p>
-                <p className="text-base text-white/90 max-w-md leading-relaxed drop-shadow-md">
+                <p className="text-base text-white/90 max-w-md leading-relaxed drop-shadow-md px-0.5">
                   Каждый дракон — это отдельная история. Иллюстрации, концепт-арт и авторские работы в жанре тёмного фэнтези.
                 </p>
                 <div className="flex gap-6 pt-4">
